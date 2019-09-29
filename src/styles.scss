@@ -29,6 +29,7 @@ body {
 
 .subtitle {
   font-size: 1.3em;
+  font-weight: bold;
   background-color: #fff;
   border-bottom: 2px solid transparent;
   border-radius: 4px;
@@ -38,24 +39,37 @@ body {
 .topic {
   margin: auto;
   font-size: 1.4em;
-  padding-left: 10px;
+  font-weight: bold;
   border: 1px;
   border-radius: 5px;
-  background: lightgray;
 }
 
 .information {
-  font-size: 1.0em;
+  padding-left: 10px;
+  font-size: 1.1em;
 }
 
 .detail {
   font-size: 0.9em;
 }
 
+hr {
+  max-width: 40%;
+}
+
 @media (min-width: 1200px) {
   .information {
-    font-size: 12px;
+    font-size: 1.1em;
   }
+
+  .subtitle {
+    font-size: 1.4em;
+  }
+
+  .topic {
+    font-size: 1.5em;
+  }
+
 }
 
 @media screen {

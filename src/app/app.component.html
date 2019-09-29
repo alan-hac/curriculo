@@ -4,14 +4,33 @@
     <div class="text-center">Desenvolvedor Fullstack</div>
   </header>
   <hr>
+  <br>
   <div class="container margin">
     <app-info></app-info>
     <hr>
     <div class="row">
-      <app-abilities class="col-xs-12 col-md-4"></app-abilities>
+      <div class="col-xs-12 col-md-4 ">
+        <app-abilities [abilities]="tecnico">
+          <i class="fas fa-laptop-code fa-lg"></i> Tecnico
+        </app-abilities>
+        <hr>
+        <br>
+        <app-abilities [abilities]="idioma">
+          <i class="fas fa-comments fa-lg"></i> Idioma
+        </app-abilities>
+        <hr>
+        <br>
+        <app-abilities [abilities]="hobbies">
+          <i class="fas fa-gamepad fa-lg"></i> Hobbies
+        </app-abilities>
+      </div>
       <div class="col-xs-12 col-md-8">
-        <app-expirience></app-expirience>
-        <app-academy></app-academy>
+        <app-expirience [experiences]="profissional">
+          <i class="fa fa-briefcase fa-lg" aria-hidden="true"></i> Experiência Profissional
+        </app-expirience>
+        <app-expirience [experiences]="academico">
+           <i class="fas fa-graduation-cap fa-lg"></i> Formação
+        </app-expirience>
       </div>
     </div>
   </div>

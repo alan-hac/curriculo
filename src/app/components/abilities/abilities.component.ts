@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-abilities',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./abilities.component.scss']
 })
 export class AbilitiesComponent implements OnInit {
+
+  @Input()
+  public abilities: Array<{name: string, level: number}>;
 
   constructor() { }
 

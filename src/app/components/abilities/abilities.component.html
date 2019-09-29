@@ -1,16 +1,12 @@
 <div class="col-12 subtitle">
-  <i class="fas fa-trophy fa-lg"></i> Habilidades
+  <ng-content></ng-content>
 </div>
 <br>
-<div class="row">
+<div class="row" *ngFor="let ability of abilities">
   <div class="col-4 main">
-    Java
+    {{ ability.name }}
   </div>
-  <div class="col-8">
-    <i class="fas fa-circle fa-lg"></i>
-    <i class="fas fa-circle fa-lg"></i>
-    <i class="fas fa-circle fa-lg"></i>
-    <i class="fas fa-circle fa-lg"></i>
-    <i class="far fa-circle fa-lg"></i>
+  <div class="col-8 text-right">
+    <i class="fa-circle fa-lg" *ngFor="let i of [0,1,2,3,4]" [class.fas]="ability.level > i" [class.far]="ability.level <= i"></i>
   </div>
 </div>

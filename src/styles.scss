@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+$fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts";
+
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap";
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+
+body {
+  background-color: darkgrey;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.page {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  border: 1em;
+  border-color: black;
+  box-shadow: 0 1px 5px rgb(130, 130, 130);
+}
+
+.subtitle {
+  font-size: 1.3em;
+  background-color: #fff;
+  border-bottom: 2px solid transparent;
+  border-radius: 4px;
+  border-color: #ddd;
+}
+
+.topic {
+  margin: auto;
+  font-size: 1.4em;
+  padding-left: 10px;
+  border: 1px;
+  border-radius: 5px;
+  background: lightgray;
+}
+
+.information {
+  font-size: 1.0em;
+}
+
+.detail {
+  font-size: 0.9em;
+}
+
+@media (min-width: 1200px) {
+  .information {
+    font-size: 12px;
+  }
+}
+
+@media screen {
+  footer {
+    display: none;
+  }
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+}

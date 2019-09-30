@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  public tecnico = [
+  public technical = [
     { name: 'Spring/Java', level: 5 },
     { name: 'Angular/Typescript', level: 5 },
     { name: 'Ionic/Typescript', level: 4 },
@@ -20,7 +20,7 @@ export class AppComponent {
     { name: 'Linux', level: 2 }
   ];
 
-  public idioma = [
+  public language = [
     { name: 'Inglês', level: 3 },
   ];
 
@@ -32,7 +32,7 @@ export class AppComponent {
     { name: 'Eletrônica/IoT', level: 2 },
   ];
 
-  public profissional = [
+  public professional = [
     {
       role: 'Analista e Desenvolvedor de Sistemas Senior',
       company: 'Tokio Marine Seguradora',
@@ -58,7 +58,7 @@ export class AppComponent {
     }
   ];
 
-  public academico = [
+  public academic = [
     {
       role: 'MBA - Desenvolvimento de Aplicações Java SOA e IOT',
       company: 'FIAP - Aclimação',

@@ -1,11 +1,10 @@
 {
-  "name": "alan-curriculo",
+  "name": "curriculo",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-	"deploy": "ngh --dir=dist/alan-curriculo",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

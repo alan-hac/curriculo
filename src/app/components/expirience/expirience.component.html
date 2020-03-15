@@ -2,7 +2,7 @@
   <ng-content></ng-content>
 </div>
 <br>
-<div class="row" *ngFor="let exp of experiences">
+<div class="row exp" *ngFor="let exp of experiences">
   <div class="col-12 text-right">
     <div class="topic destaque"> {{ exp.role }} </div>
   </div>
@@ -10,9 +10,8 @@
      {{ exp.company }} - {{ exp.period }}
   </div>
   <br>
-  <br>
-  <div class="col-12">
-    <p class="information">{{ exp.information }}</p>
+  <div class="col-12" *ngIf="exp.information">
+    <p class="information" [innerHtml] = "exp.information" ></p>
   </div>
   <hr>
 </div>

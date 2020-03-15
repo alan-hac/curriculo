@@ -28,7 +28,7 @@ body {
 }
 
 .subtitle {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: bold;
   background-color: #fff;
   border-bottom: 2px solid transparent;
@@ -82,9 +82,14 @@ hr {
   body {
     -webkit-print-color-adjust: exact;
   }
+  a {
+    color: black;
+    text-decoration: none !important;
+  }
   footer {
     position: fixed;
     bottom: 0;
     right: 0;
   }
+
 }

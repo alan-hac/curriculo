@@ -1,12 +1,13 @@
-<div class="col-12 subtitle">
+<div class="col-12">
   <ng-content></ng-content>
 </div>
 <br>
 <div class="row" *ngFor="let ability of abilities">
-  <div class="col-4 main">
+  <div class="col-sm-4 col-md-6 main">
     {{ ability.name }}
   </div>
-  <div class="col-8 text-right">
-    <i class="fa-circle fa-lg" *ngFor="let i of [0,1,2,3,4]" [class.fas]="ability.level > i" [class.far]="ability.level <= i"></i>
+  <div class="col-sm-8 col-md-6 points">
+    <i class="fa-circle" *ngFor="let i of [0,1,2,3,4]" [class.fas]="ability.level > i" [class.far]="ability.level <= i"></i>
   </div>
 </div>
+<br>

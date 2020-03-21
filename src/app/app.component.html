@@ -1,47 +1,26 @@
 <div class="container page">
   <header>
-    <h1 class="text-center title">Alan Henrique Almeida da Costa</h1>
+    <h1 class="text-center title">{{curriculum.name}}</h1>
   </header>
   <hr>
   <div class="container margin">
-    <app-info></app-info>
-    <hr>
-    <br>
+    <app-info [objective]="curriculum.objective" [sub]="curriculum.sub" [infos]="curriculum.infos"></app-info>
     <div class="row">
-      <div class="col-xs-12 col-md-4 ">
-        <app-abilities [abilities]="technology">
-          <i class="fas fa-laptop-code fa-lg"></i> Languages
-        </app-abilities>
-        <hr>
-        <br>
-        <app-abilities [abilities]="framework">
-          <i class="fas fa-toolbox fa-lg"></i> Frameworks
-        </app-abilities>
-        <hr>
-        <br>
-        <app-abilities [abilities]="tool">
-          <i class="fas fa-tools fa-lg"></i> Tools
-        </app-abilities>
-        <hr>
-        <br>
-        <app-abilities [abilities]="language">
-          <i class="fas fa-comments fa-lg"></i> Languages
-        </app-abilities>
-        <hr>
-        <br>
-        <app-abilities [abilities]="hobbies">
-          <i class="fas fa-gamepad fa-lg"></i> Hobbies
+      <div class="col-xs-12 col-md-4 col-lg-5">
+        <app-abilities [abilities]="skill.skills" *ngFor="let skill of curriculum.skills">
+          <div class="subtitle">
+            <i [class]="skill.icon"></i> <span>{{skill.title}}</span>
+          </div>
         </app-abilities>
       </div>
-      <div class="col-xs-12 col-md-8">
-        <app-expirience [experiences]="professional">
-          <i class="fa fa-briefcase fa-lg" aria-hidden="true"></i> Professional Experience
-        </app-expirience>
-        <app-expirience [experiences]="academic">
-           <i class="fas fa-graduation-cap fa-lg"></i> Academic
+      <div class="col-xs-12 col-md-8 col-lg-7">
+        <app-expirience [experiences]="xp.registries" *ngFor="let xp of curriculum.xps">
+          <div class="subtitle">
+            <i [class]="xp.icon"></i> <span>{{xp.title}}</span>
+          </div>  
         </app-expirience>
       </div>
     </div>
   </div>
-  <footer class="information text-right">November de 2019</footer>
+  <footer class="information text-right d-node d-print-block">2020 March</footer>
 </div>

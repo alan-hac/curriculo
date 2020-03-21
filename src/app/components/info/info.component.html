@@ -1,51 +1,25 @@
 <div class="row align-items-center">
-  <div class="col-xs-12 col-md-3 text-center">
+  <div class="d-none d-sm-block col-sm-6 col-md-3 col-lg-3 text-center">
     <img src="assets/contact.png" class="qr-code-contact">
   </div>
-  <div class="col-xs-12 col-md-6">
-    <div class="main text-center">Fullstack Developer</div>
-    <div class="col-12 text-center">Java, Javascript, Typescript, HTML, CSS, SQL Developer</div>
-    <!-- <div class="col-12 main text-center">
-      Criação de aplicações web usando principalmente backend Java com Spring e
-      frontend Angular com Bootstrap ou MaterializeCSS.
-    </div> -->
+  <div class="d-none d-md-block col-md-6">
+    <div class="main text-center">{{objective}}</div>
+    <div class="col-12 text-center">{{sub}}</div>
+    <br>
   </div>
-  <div class="col-xs-12 col-md-3 detail">
+  <div class="col-sm-6 col-md-3 detail">
     <div class="row">
-      <div class="col-12">
-        <i class="fab fa-whatsapp fa-lg text-left"></i>
-        <a href="https://web.whatsapp.com/send?phone=5511973612756" target="_blank"> +55 (11) 97361-2756 </a>
+      <div class="col-12" *ngFor="let info of infos">
+        <i [class]="info.icon"></i>
+        <a [href]="info.url" target="_blank" *ngIf="info.url"> {{info.text}} </a>
+        <span *ngIf="!info.url"> {{info.text}}</span> 
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <i class="fas fa-envelope fa-lg text-left"></i>
-        <a href="mailto:alan_hac@outlook.com" target="_blank"> alan_hac@outlook.com </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <i class="fab fa-linkedin fa-lg text-left"></i>
-        <a href="https://linkedin.com/in/alanhac" target="_blank"> linkedin.com/in/alanhac </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <i class="fab fa-github fa-lg text-left"></i>
-        <a href="https://github.com/alan-hac" target="_blank"> github.com/alan-hac </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <i class="fas fa-map-marker-alt fa-lg text-left"></i>
-        <a href="https://goo.gl/maps/Mc1MMXtDbCrCtfMW6" target="_blank"> S. Bernardo do Campo, SP</a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-          <i class="fas fa-birthday-cake fa-lg text-left"></i> 22th September 1990
-        <!-- <i class="fas fa-birthday-cake fa-lg text-left"></i> 22 de Setembro de 1990 -->
-      </div>
-    </div>
+  </div>
+  <div class="d-block d-md-none col-sm-12">
+    <br>
+    <div class="main text-center"> {{objective}}</div>
+    <div class="col-12 text-center"> {{sub}}</div>
   </div>
 </div>
+<hr>

@@ -8,12 +8,11 @@ $fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
-@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Exo+2&display=swap");
 
 body {
   background-color: darkgrey;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
 }
 
 .page {
@@ -27,55 +26,10 @@ body {
   box-shadow: 0 1px 5px rgb(130, 130, 130);
 }
 
-.subtitle {
-  font-size: 1.5em;
-  font-weight: bold;
-  background-color: #fff;
-  border-bottom: 2px solid transparent;
-  border-radius: 4px;
-  border-color: #ddd;
-}
-
 .topic {
   margin: auto;
   font-size: 1.4em;
-  font-weight: bold;
-  border: 1px;
-  border-radius: 5px;
-}
-
-.information {
-  padding-left: 10px;
-  font-size: 1.1em;
-}
-
-.detail {
-  font-size: 0.9em;
-}
-
-hr {
-  max-width: 40%;
-}
-
-@media (min-width: 1200px) {
-  .information {
-    font-size: 1.1em;
-  }
-
-  .subtitle {
-    font-size: 1.4em;
-  }
-
-  .topic {
-    font-size: 1.5em;
-  }
-
-}
-
-@media screen {
-  footer {
-    display: none;
-  }
+  margin-left: 5px;
 }
 
 @media print {
@@ -86,10 +40,4 @@ hr {
     color: black;
     text-decoration: none !important;
   }
-  footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-  }
-
 }

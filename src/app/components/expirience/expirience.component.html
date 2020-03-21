@@ -1,4 +1,4 @@
-<div class="col-12 subtitle">
+<div class="col-12">
   <ng-content></ng-content>
 </div>
 <br>
@@ -9,9 +9,11 @@
   <div class="col-12 destaque text-right">
      {{ exp.company }} - {{ exp.period }}
   </div>
-  <br>
-  <div class="col-12" *ngIf="exp.information">
-    <p class="information" [innerHtml] = "exp.information" ></p>
+  <hr>
+  <div class="col-12" *ngIf="exp.information && exp.information.length > 0">
+    <ul>
+      <li *ngFor="let inf of exp.information" class="information">{{ inf }}</li>
+    </ul>
   </div>
   <hr>
 </div>

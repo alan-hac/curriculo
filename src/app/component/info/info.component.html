@@ -10,9 +10,9 @@
   <div class="col-sm-6 col-md-3 detail">
     <div class="row">
       <div class="col-12" *ngFor="let info of infos">
-        <i [class]="info.icon"></i>
+        <fa-icon [icon]="info.icon"></fa-icon>
         <a [href]="info.url" target="_blank" *ngIf="info.url"> {{info.text}} </a>
-        <span *ngIf="!info.url"> {{info.text}}</span> 
+        <span *ngIf="!info.url"> {{info.text}}</span>
       </div>
     </div>
   </div>
@@ -22,4 +22,3 @@
     <div class="col-12 text-center"> {{sub}}</div>
   </div>
 </div>
-<hr>

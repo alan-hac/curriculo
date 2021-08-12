@@ -2,25 +2,24 @@
   <header>
     <h1 class="text-center title">{{curriculum.name}}</h1>
   </header>
-  <hr>
   <div class="container margin">
     <app-info [objective]="curriculum.objective" [sub]="curriculum.sub" [infos]="curriculum.infos"></app-info>
     <div class="row">
-      <div class="col-xs-12 col-md-4 col-lg-5">
-        <app-abilities [abilities]="skill.skills" *ngFor="let skill of curriculum.skills">
+      <div class="col-xs-12 col-md-4 col-lg-4">
+        <app-ability [abilities]="skill.skills" *ngFor="let skill of curriculum.skills">
           <div class="subtitle">
-            <i [class]="skill.icon"></i> <span>{{skill.title}}</span>
+            <fa-icon [icon]="skill.icon"></fa-icon> <span>{{skill.title}}</span>
           </div>
-        </app-abilities>
+        </app-ability>
       </div>
-      <div class="col-xs-12 col-md-8 col-lg-7">
-        <app-expirience [experiences]="xp.registries" *ngFor="let xp of curriculum.xps">
+      <div class="col-xs-12 col-md-8 col-lg-8">
+        <app-experience [experiences]="xp.registries" *ngFor="let xp of curriculum.xps">
           <div class="subtitle">
-            <i [class]="xp.icon"></i> <span>{{xp.title}}</span>
-          </div>  
-        </app-expirience>
+            <fa-icon [icon]="xp.icon"></fa-icon> <span>{{xp.title}}</span>
+          </div>
+        </app-experience>
       </div>
     </div>
   </div>
-  <footer class="information text-right d-node d-print-block">2020 March</footer>
+  <footer class="information text-right d-node d-print-block">2021 August</footer>
 </div>

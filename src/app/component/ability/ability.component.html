@@ -7,7 +7,7 @@
     {{ ability.name }}
   </div>
   <div class="col-sm-8 col-md-6 points">
-    <i class="fa-circle" *ngFor="let i of [0,1,2,3,4]" [class.fas]="ability.level > i" [class.far]="ability.level <= i"></i>
+    <fa-icon class='skill-dot' *ngFor="let i of [0,1,2,3,4]" [icon]="ability.level <= i ? farCircle : fasCircle"></fa-icon>
   </div>
 </div>
 <br>

@@ -1,20 +1,22 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppComponent } from './app.component';
-import { InfoComponent } from './components/info/info.component';
-import { AbilitiesComponent } from './components/abilities/abilities.component';
-import { ExpirienceComponent } from './components/expirience/expirience.component';
+import { InfoComponent } from './component/info/info.component';
+import { AbilityComponent } from './component/ability/ability.component';
+import { ExperienceComponent } from './component/experience/experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InfoComponent,
-    AbilitiesComponent,
-    ExpirienceComponent,
+    AbilityComponent,
+    ExperienceComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

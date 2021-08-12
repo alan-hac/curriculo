@@ -1,20 +1,18 @@
 <div class="col-12">
   <ng-content></ng-content>
 </div>
-<br>
+<br/>
 <div class="row exp" *ngFor="let exp of experiences">
-  <div class="col-12 text-right">
-    <div class="topic destaque"> {{ exp.role }} </div>
+  <div class="col-12 text-center">
+    <div class="topic destaque">{{ exp.role }}</div>
   </div>
-  <div class="col-12 destaque text-right">
-     {{ exp.company }} - {{ exp.period }}
+  <div class="col-12 destaque text-center">
+    {{ exp.company }} - {{ exp.period }}
   </div>
-  <hr>
   <div class="col-12" *ngIf="exp.information && exp.information.length > 0">
     <ul>
       <li *ngFor="let inf of exp.information" class="information">{{ inf }}</li>
     </ul>
   </div>
-  <hr>
 </div>
-<br>
+<br/>

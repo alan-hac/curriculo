@@ -1,9 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { faCircle as fasCircle } from '@fortawesome/free-solid-svg-icons';
 import { faCircle as farCircle } from '@fortawesome/free-regular-svg-icons';
-
-
-import { SkillPoint } from 'src/app/model/skill-point';
+import { SkillTopic } from 'src/app/model/skill-topic';
 
 @Component({
   selector: 'app-ability',
@@ -12,7 +10,7 @@ import { SkillPoint } from 'src/app/model/skill-point';
 })
 export class AbilityComponent implements OnInit {
 
-  @Input() abilities = new Array<SkillPoint>();
+  @Input() skills = {} as SkillTopic;
   fasCircle = fasCircle
   farCircle = farCircle
 

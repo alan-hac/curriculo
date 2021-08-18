@@ -1,48 +1,47 @@
-.main
-  font-size: 1.6em
+.detail
+  font-size: 1.2em
+  text-align: center
 
+.objective
+  margin-top: 10px
+  text-align: center
 
-.points
-  text-align: right
+.qr-code-contact
+  margin-top: -10px
+  margin-left: -15px
+  max-width: 210px
 
+fa-icon
+  font-size: 1.2em
 
-.fa-circle
-  font-size: 1.8em
-  margin-right: 5px
-
-
-.row
-  margin-bottom: 10px
-
+@media (min-width: 576px)
+  .qr-code-contact
+    max-width: 160px
+  .main
+    font-size: 1.8em
+  .detail
+    font-size: 1.0em
+    text-align: left
 
 @media (min-width: 768px)
   .main
-    font-size: 0.7em
-
-  .fa-circle
-    font-size: 0.8em
-    margin-right: 3px
-
-
+    font-size: 1.5em
+  .detail
+    font-size: 0.6em
+    text-align: left
 
 @media (min-width: 992px)
-  .main
-    font-size: 1.1em
+  .detail
+    font-size: 0.9em
 
-  .fa-circle
-    font-size: 1.4em
-    margin-right: 2px
-
-
-
-@media print
-  .main
+@media (min-width: 1200px)
+  .detail
     font-size: 1.0em
 
-  .fa-circle
-    font-size: 1.2em
-    margin-right: 3px
-
-  .points
-    width: 50% !important
-
+@media print
+  .qr-code-contact
+    max-width: 200px
+  .main
+    font-size: 1.6em
+  .detail
+    font-size: 1.0em

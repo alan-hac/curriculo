@@ -1,7 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-
-import { XpRegistry } from 'src/app/model/xp-registry';
-
+import { XpTopic } from 'src/app/model/xp-topic';
 
 @Component({
   selector: 'app-experience',
@@ -10,7 +8,7 @@ import { XpRegistry } from 'src/app/model/xp-registry';
 })
 export class ExperienceComponent implements OnInit {
 
-  @Input() experiences = new Array<XpRegistry>();
+  @Input() experiences = {} as XpTopic;
 
   constructor() { }
 

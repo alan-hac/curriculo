@@ -4,7 +4,7 @@ import { CurriculumData } from 'src/app/model/curriculum-data';
 
 export const CURRICULUM: CurriculumData = {
     name: 'Alan Henrique Almeida da Costa',
-    objective: 'Fullstack Developer',
+    objective: 'Desenvolvedor Fullstack',
     sub: 'Java/Kotlin - Angular',
     infos: [
         {
@@ -33,7 +33,7 @@ export const CURRICULUM: CurriculumData = {
             url: 'https://goo.gl/maps/Mc1MMXtDbCrCtfMW6'
         },
         {
-            text: '22th September 1990',
+            text: '22 de Setembro de 1990',
             icon: faBirthdayCake,
             url: ''
         }
@@ -53,7 +53,7 @@ export const CURRICULUM: CurriculumData = {
             ]
         },
         {
-          title: "Tools",
+          title: "Ferramentas",
           icon: faTools,
           skills: [
               { name: 'Git', level: 3 },
@@ -63,35 +63,35 @@ export const CURRICULUM: CurriculumData = {
           ]
       },
         {
-            title: "Languages",
+            title: "Idiomas",
             icon: faComment,
             skills: [
-                { name: 'English', level: 3 },
+                { name: 'Inglês', level: 3 },
             ]
         },
         {
             title: "Hobbies",
             icon: faGamepad,
             skills: [
-            { name: 'Gaming', level: 5 },
-            { name: 'Programming', level: 5 },
-            { name: 'Technology', level: 3 },
-            { name: 'Movies/Series', level: 3 }
-          ]
+              { name: 'Jogos', level: 5 },
+              { name: 'Programação', level: 5 },
+              { name: 'Tecnologia', level: 3 },
+              { name: 'Filmes/Series', level: 3 }
+            ]
         }
     ],
     xps: [
         {
-            title: "Professional Experience",
+            title: "Experiencia Profissional",
             icon: faBriefcase,
             registries: [
               {
-                  role: 'Software Developer/Analyst',
+                  role: 'Analista/Desenvolvedor de Software',
                   company: 'Tokio Marine Seguradora',
                   period: 'Nov 2018 - Nov 2020',
                   information: [
                     'New applications development. Coding Java with Springboot modules on backend, Angular or Thymeleaf.',
-                    'Java/EJB/JSP legacy applications maintenance.',
+                    'Old Java/EJB/JSP applications maintenance.',
                     'Team discussion about Business rules and the projects architecture.',
                     'Internal libraries development to unify commons code between the applications.'
                   ]
@@ -101,7 +101,7 @@ export const CURRICULUM: CurriculumData = {
                   company: 'Resource IT (Outsourced at Tokio Marine Seguradora)',
                   period: 'Mar 2017 - Nov 2018',
                   information: [
-                    'Java/EJB/JSP Legacy application maintenance.',
+                    'Old Java/EJB/JSP application maintenance.',
                     'Issues resolution and new features development.',
                   ]
 

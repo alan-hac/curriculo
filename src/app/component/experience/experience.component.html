@@ -1,12 +1,14 @@
 <div class="col-12">
-  <ng-content></ng-content>
+  <div class="subtitle">
+    <fa-icon [icon]="experiences.icon"></fa-icon> <span>{{experiences.title}}</span>
+  </div>
 </div>
 <br/>
-<div class="row exp" *ngFor="let exp of experiences">
-  <div class="col-12 text-center">
+<div class="row exp" *ngFor="let exp of experiences.registries">
+  <div class="col-12 text-end">
     <div class="topic destaque">{{ exp.role }}</div>
   </div>
-  <div class="col-12 destaque text-center">
+  <div class="col-12 destaque text-end">
     {{ exp.company }} - {{ exp.period }}
   </div>
   <div class="col-12" *ngIf="exp.information && exp.information.length > 0">
@@ -15,4 +17,3 @@
     </ul>
   </div>
 </div>
-<br/>

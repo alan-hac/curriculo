@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { CURRICULUM } from './data/en/curriculum';
+import { CURRICULUM as en } from './data/en/curriculum';
+import { CURRICULUM as pt } from './data/pt-BR/curriculum';
+
 
 @Component({
   selector: 'app-root',
@@ -7,6 +9,13 @@ import { CURRICULUM } from './data/en/curriculum';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  lang = "en";
-  curriculum = CURRICULUM;
+
+  curriculum = en
+
+  constructor() { }
+
+  alterLanguage(language: String) {
+    this.curriculum = language === 'en' ? en : pt
+  }
+
 }
